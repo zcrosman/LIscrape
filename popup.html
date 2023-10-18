@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>LinkedIn Grab</h1>
+<div id="metadata">
+    <span id="author">Author: zcrosman</span>
+    <span id="version">Version: 0.1</span>
+</div>
+
+<p id="countDisplay">Number of individuals saved: <span id="savedCount">0</span></p>
+
+<!-- Taking out for now. The auto extract looks to be working properly. 
+Might renable if I add a option to auto scrape -->
+<button class="hidden" id="scrapeNames">Manually Scrape Names</button>
+
+<select id="emailFormatDropdown" class="hidden">
+    <option value="default">Select a format</option>
+    <option value="f.l">flast (e.g. jsmith)</option>
+    <option value="fname.lname">first.last (e.g. john.smith)</option>
+    <option value="fnamelname">firstlast (e.g. johnsmith)</option>
+</select>
+<input type="text" id="domainInput" class="hidden" placeholder="ex. sixgen.io">
+<p id="selectPrompt" class="hidden">Select a email format</p>
+<p id="domainWarning" class="hidden">Enter a domain</p>
+<button id="downloadFormatButton" class="hidden disabled-button" disabled>Download Generated Emails</button>
+
+
+
+
+<button id="generateEmailsButton">Generate Emails</button>
+
+
+
+<br>
+<button id="downloadCSV">Download CSV</button>
+<br>
+
+<button id="clearStorage">Clear Local Storage</button>
+
+<script src="popup.js"></script>
+
+</body>
+</html>

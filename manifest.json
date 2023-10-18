@@ -1,0 +1,23 @@
+{
+    "name": "LS",
+    "description": "ls",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action" : {
+        "default_popup" : "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "downloads",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.linkedin.com/*"],
+            "persistent": true,
+            "js": ["content.js"]
+        }
+    ]    
+}
