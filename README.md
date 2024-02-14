@@ -1,4 +1,5 @@
 # LIscrape Chrome Extension
+[!Extension](/imgs/li-scrape.png)
 ## Overview
 
 LinkedIn Extractor is a Chrome extension OSINT tool to gather company employee details. It is engineered to automate the process of data collection from LinkedIn profiles, thereby enhancing efficiency and accuracy in gathering vital information. This extension operates discreetly in the background, seamlessly extracting data such as names, titles, and employment details as users navigate through LinkedIn.
